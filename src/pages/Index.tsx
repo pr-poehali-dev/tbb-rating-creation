@@ -25,51 +25,51 @@ interface Review {
 const bookmakers: Bookmaker[] = [
   {
     id: 1,
-    name: 'Winline',
-    freebet: '10 000 ₽',
-    rating: 9.5,
-    features: ['Быстрый вывод', 'Высокие коэффициенты', 'Мобильное приложение'],
-    logo: '🏆'
-  },
-  {
-    id: 2,
     name: 'Fonbet',
-    freebet: '15 000 ₽',
-    rating: 9.3,
-    features: ['Лучшая линия', 'Cashout', 'Live-ставки'],
+    freebet: 'до 15 000 ₽',
+    rating: 9.5,
+    features: ['Фрибет без депозита', 'Live-ставки', 'Лучшая линия'],
     logo: '⚡'
   },
   {
-    id: 3,
+    id: 2,
     name: 'Марафонбет',
-    freebet: '12 000 ₽',
-    rating: 9.1,
-    features: ['Широкая роспись', 'Бонусы на экспрессы', 'Статистика'],
+    freebet: 'до 25 000 ₽',
+    rating: 9.2,
+    features: ['100% к первому депозиту', 'Широкая роспись', 'Статистика матчей'],
     logo: '🎯'
   },
   {
+    id: 3,
+    name: 'Betboom',
+    freebet: 'до 10 000 ₽',
+    rating: 9.0,
+    features: ['5 фрибетов новичкам', 'Кешбэк до 20%', 'Бонусы за киберспорт'],
+    logo: '🚀'
+  },
+  {
     id: 4,
-    name: 'Betcity',
-    freebet: '7 500 ₽',
-    rating: 8.5,
-    features: ['Надежность', 'Программа лояльности', 'Киберспорт'],
-    logo: '💎'
+    name: 'Winline',
+    freebet: '3 000 ₽',
+    rating: 8.8,
+    features: ['Фрибет за регистрацию', 'Программа лояльности', 'Быстрый вывод'],
+    logo: '🏆'
   },
   {
     id: 5,
-    name: 'Leon',
-    freebet: '6 000 ₽',
-    rating: 8.3,
-    features: ['Простой интерфейс', 'Быстрые выплаты', 'Поддержка 24/7'],
-    logo: '⭐'
+    name: 'Betcity',
+    freebet: 'до 3 000 ₽',
+    rating: 8.6,
+    features: ['Страховка первой ставки', 'Надежность', 'Промокоды'],
+    logo: '💎'
   },
   {
     id: 6,
-    name: 'Betboom',
-    freebet: '5 000 ₽',
-    rating: 8.0,
-    features: ['Промокоды', 'Бустеры коэффициентов', 'Кешбэк'],
-    logo: '🚀'
+    name: 'Leon',
+    freebet: 'до 20 000 ₽',
+    rating: 8.5,
+    features: ['Бонус на первый депозит', 'Простой интерфейс', 'Поддержка 24/7'],
+    logo: '⭐'
   }
 ];
 
@@ -77,44 +77,38 @@ const reviews: Review[] = [
   {
     id: 1,
     name: 'Александр М.',
-    bookmaker: 'Winline',
+    bookmaker: 'Fonbet',
     rating: 5,
-    text: 'Отличный фрибет! Отыграл за неделю, вывел без проблем. Коэффициенты реально высокие.',
+    text: 'Лучшая контора! Фрибет 15000 без депозита пришел сразу после регистрации. Live-ставки работают отлично!',
     date: '2 дня назад'
   },
   {
     id: 2,
     name: 'Дмитрий К.',
-    bookmaker: 'Fonbet',
+    bookmaker: 'Марафонбет',
     rating: 5,
-    text: 'Лучшая контора для live-ставок. Фрибет пришел моментально после регистрации.',
+    text: 'Получил 25000 на первый депозит, отыграл легко. Линия огромная, коэффициенты высокие.',
     date: '5 дней назад'
   },
   {
     id: 3,
     name: 'Михаил П.',
-    bookmaker: 'Марафонбет',
-    rating: 4,
-    text: 'Хорошие условия отыгрыша фрибета. Линия огромная, особенно по футболу.',
+    bookmaker: 'Betboom',
+    rating: 5,
+    text: 'Программа для новичков супер — 5 фрибетов по очереди. Кешбэк 20% радует каждую неделю!',
     date: '1 неделю назад'
   },
   {
     id: 4,
     name: 'Сергей Л.',
-    bookmaker: 'Betcity',
-    rating: 5,
-    text: 'Надежная контора с отличной программой лояльности. Фрибет отработал легко!',
+    bookmaker: 'Winline',
+    rating: 4,
+    text: 'Фрибет 3000 за регистрацию без проблем. Вывод быстрый, программа лояльности работает.',
     date: '3 дня назад'
   }
 ];
 
-const comparisonData = [
-  { param: 'Сумма фрибета', winline: '10 000 ₽', fonbet: '15 000 ₽', marathon: '12 000 ₽', betcity: '7 500 ₽' },
-  { param: 'Вейджер', winline: 'x5', fonbet: 'x7', marathon: 'x6', betcity: 'x4' },
-  { param: 'Срок отыгрыша', winline: '30 дней', fonbet: '60 дней', marathon: '45 дней', betcity: '30 дней' },
-  { param: 'Мин. коэффициент', winline: '1.50', fonbet: '1.75', marathon: '1.60', betcity: '1.40' },
-  { param: 'Вывод средств', winline: '24 часа', fonbet: '12 часов', marathon: '24 часа', betcity: '12 часов' }
-];
+
 
 export default function Index() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
@@ -217,61 +211,6 @@ export default function Index() {
                   </CardContent>
                 </Card>
               ))}
-            </div>
-          </section>
-
-          <section 
-            id="comparison-section"
-            data-animate
-            className={`transition-all duration-700 ${
-              isVisible['comparison-section'] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-                Сравнение условий
-              </h2>
-              <p className="text-slate-400 text-lg">
-                Детальное сравнение топ-букмекеров по ключевым параметрам
-              </p>
-            </div>
-
-            <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-700 overflow-hidden">
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead className="bg-slate-900/70">
-                    <tr>
-                      <th className="px-6 py-4 text-left text-slate-300 font-semibold">Параметр</th>
-                      <th className="px-6 py-4 text-center text-slate-300 font-semibold">Winline</th>
-                      <th className="px-6 py-4 text-center text-slate-300 font-semibold">Fonbet</th>
-                      <th className="px-6 py-4 text-center text-slate-300 font-semibold">Марафонбет</th>
-                      <th className="px-6 py-4 text-center text-slate-300 font-semibold">Betcity</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {comparisonData.map((row, index) => (
-                      <tr 
-                        key={index} 
-                        className={`${index % 2 === 0 ? 'bg-slate-800/30' : 'bg-slate-900/30'} hover:bg-slate-700/50 transition-colors`}
-                      >
-                        <td className="px-6 py-4 font-medium text-white">{row.param}</td>
-                        <td className="px-6 py-4 text-center text-slate-300">{row.winline}</td>
-                        <td className="px-6 py-4 text-center text-slate-300">{row.fonbet}</td>
-                        <td className="px-6 py-4 text-center text-slate-300">{row.marathon}</td>
-                        <td className="px-6 py-4 text-center text-slate-300">{row.betcity}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="mt-6 flex items-start gap-3 bg-orange-500/10 border border-orange-500/30 rounded-lg p-4">
-              <Icon name="Info" size={20} className="text-orange-400 flex-shrink-0 mt-0.5" />
-              <p className="text-slate-300 text-sm">
-                <span className="font-semibold text-white">Важно:</span> Условия отыгрыша фрибетов могут меняться. 
-                Актуальную информацию уточняйте на сайте букмекера.
-              </p>
             </div>
           </section>
 

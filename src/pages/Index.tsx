@@ -49,14 +49,6 @@ const bookmakers: Bookmaker[] = [
   },
   {
     id: 4,
-    name: 'Pari',
-    freebet: '8 000 ₽',
-    rating: 8.8,
-    features: ['Быстрая регистрация', 'Акции каждый день', 'Стримы матчей'],
-    logo: '🔥'
-  },
-  {
-    id: 5,
     name: 'Betcity',
     freebet: '7 500 ₽',
     rating: 8.5,
@@ -64,7 +56,7 @@ const bookmakers: Bookmaker[] = [
     logo: '💎'
   },
   {
-    id: 6,
+    id: 5,
     name: 'Leon',
     freebet: '6 000 ₽',
     rating: 8.3,
@@ -72,7 +64,7 @@ const bookmakers: Bookmaker[] = [
     logo: '⭐'
   },
   {
-    id: 7,
+    id: 6,
     name: 'Betboom',
     freebet: '5 000 ₽',
     rating: 8.0,
@@ -109,19 +101,19 @@ const reviews: Review[] = [
   {
     id: 4,
     name: 'Сергей Л.',
-    bookmaker: 'Pari',
+    bookmaker: 'Betcity',
     rating: 5,
-    text: 'Самая быстрая регистрация! Фрибет активировали за минуту. Рекомендую!',
+    text: 'Надежная контора с отличной программой лояльности. Фрибет отработал легко!',
     date: '3 дня назад'
   }
 ];
 
 const comparisonData = [
-  { param: 'Сумма фрибета', winline: '10 000 ₽', fonbet: '15 000 ₽', marathon: '12 000 ₽', pari: '8 000 ₽' },
-  { param: 'Вейджер', winline: 'x5', fonbet: 'x7', marathon: 'x6', pari: 'x5' },
-  { param: 'Срок отыгрыша', winline: '30 дней', fonbet: '60 дней', marathon: '45 дней', pari: '30 дней' },
-  { param: 'Мин. коэффициент', winline: '1.50', fonbet: '1.75', marathon: '1.60', pari: '1.50' },
-  { param: 'Вывод средств', winline: '24 часа', fonbet: '12 часов', marathon: '24 часа', pari: '48 часов' }
+  { param: 'Сумма фрибета', winline: '10 000 ₽', fonbet: '15 000 ₽', marathon: '12 000 ₽', betcity: '7 500 ₽' },
+  { param: 'Вейджер', winline: 'x5', fonbet: 'x7', marathon: 'x6', betcity: 'x4' },
+  { param: 'Срок отыгрыша', winline: '30 дней', fonbet: '60 дней', marathon: '45 дней', betcity: '30 дней' },
+  { param: 'Мин. коэффициент', winline: '1.50', fonbet: '1.75', marathon: '1.60', betcity: '1.40' },
+  { param: 'Вывод средств', winline: '24 часа', fonbet: '12 часов', marathon: '24 часа', betcity: '12 часов' }
 ];
 
 export default function Index() {
@@ -180,7 +172,7 @@ export default function Index() {
           >
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-                Топ-7 букмекеров с фрибетами
+                Топ-6 букмекеров с фрибетами
               </h2>
               <p className="text-slate-400 text-lg">
                 Актуальные предложения от лучших букмекерских контор России
@@ -240,7 +232,7 @@ export default function Index() {
                 Сравнение условий
               </h2>
               <p className="text-slate-400 text-lg">
-                Детальное сравнение топ-4 букмекеров по ключевым параметрам
+                Детальное сравнение топ-букмекеров по ключевым параметрам
               </p>
             </div>
 
@@ -253,7 +245,7 @@ export default function Index() {
                       <th className="px-6 py-4 text-center text-slate-300 font-semibold">Winline</th>
                       <th className="px-6 py-4 text-center text-slate-300 font-semibold">Fonbet</th>
                       <th className="px-6 py-4 text-center text-slate-300 font-semibold">Марафонбет</th>
-                      <th className="px-6 py-4 text-center text-slate-300 font-semibold">Pari</th>
+                      <th className="px-6 py-4 text-center text-slate-300 font-semibold">Betcity</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -266,7 +258,7 @@ export default function Index() {
                         <td className="px-6 py-4 text-center text-slate-300">{row.winline}</td>
                         <td className="px-6 py-4 text-center text-slate-300">{row.fonbet}</td>
                         <td className="px-6 py-4 text-center text-slate-300">{row.marathon}</td>
-                        <td className="px-6 py-4 text-center text-slate-300">{row.pari}</td>
+                        <td className="px-6 py-4 text-center text-slate-300">{row.betcity}</td>
                       </tr>
                     ))}
                   </tbody>
